@@ -1,0 +1,23 @@
+{
+  "name": "cypress-saucedemo-automation",
+  "version": "1.0.0",
+  "description": "SEPQM Cypress Automation Testing Assignment using SauceDemo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tharsi-Rangan/cypress-saucedemo-automation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tharsi-Rangan/cypress-saucedemo-automation/issues"
+  },
+  "homepage": "https://github.com/Tharsi-Rangan/cypress-saucedemo-automation#readme",
+  "devDependencies": {
+    "cypress": "^15.11.0"
+  }
+}
