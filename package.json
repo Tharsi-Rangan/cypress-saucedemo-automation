@@ -4,8 +4,13 @@
   "description": "SEPQM Cypress Automation Testing Assignment using SauceDemo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "cy:open": "cypress open",
+  "cy:run": "cypress run",
+  "report:run": "cypress run",
+  "report:merge": "npx mochawesome-merge cypress/reports/mocha/*.json -o cypress/reports/report.json",
+  "report:generate": "npx marge cypress/reports/report.json -f report -o cypress/reports/html",
+  "test:report": "npm run report:run && npm run report:merge && npm run report:generate"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Tharsi-Rangan/cypress-saucedemo-automation.git"
@@ -18,6 +23,9 @@
   },
   "homepage": "https://github.com/Tharsi-Rangan/cypress-saucedemo-automation#readme",
   "devDependencies": {
-    "cypress": "^15.11.0"
+    "cypress": "^15.11.0",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.1.1",
+    "mochawesome-report-generator": "^6.3.2"
   }
 }
