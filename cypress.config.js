@@ -8,6 +8,8 @@ module.exports = defineConfig({
     html: false,
     json: true
   },
+  video: true,
+  screenshotOnRunFailure: true,
   e2e: {
     baseUrl: 'https://www.saucedemo.com',
     setupNodeEvents(on, config) {

@@ -4,6 +4,7 @@ describe('Login Tests', () => {
 
     cy.url().should('include', '/inventory.html');
     cy.get('.title').should('contain', 'Products');
+    //cy.get('.title').should('contain', 'Inventory'); // intentional wrong assertion
   });
 
   it('should show an error for invalid login', () => {
